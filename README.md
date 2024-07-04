@@ -6,7 +6,7 @@
   <img src="https://telegra.ph/file/29f6a99ce5ae25cf14153.png">
 </p>
 <p align="center">
-  <img src="https://github.com/TheChampu/ChampuMusic/blob/main/TheChampu.gif">
+ <a href="https://www.youtube.com/@ShivanshuDeo"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 </p>
 </p>
  <h3></h3>
