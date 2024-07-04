@@ -11,9 +11,9 @@
  <p align="center">
 <a href="https://github.com/the-stonex/StoneMusic/stargazers"><img src="https://img.shields.io/github/stars/the-stonex/StoneMusic?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
 <a href="https://github.com/the-stonex/StoneMusic/network/members"> <img src="https://img.shields.io/github/forks/the-stonex/StoneMusic?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
-<a href="https://github.com/AnonymousX1025/AnonXMusic/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
+<a href="https://github.com/the-stonex/StoneMusic/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
 <a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Written%20in-Python-orange?style=for-the-badge&logo=python" alt="Python" /> </a>
-<a href="https://github.com/AnonymousX1025/AnonXMusic/commits/AnonymousX1025"> <img src="https://img.shields.io/github/last-commit/AnonymousX1025/AnonXMusic?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
+<a href="https://github.com/the-stonex/StoneMusic/commits/the-stonex"> <img src="https://img.shields.io/github/last-commit/the-stonex/StoneMusic?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
 </p>
 </p>
 </p>
