@@ -3,5 +3,5 @@
 </h2>
 
 <p align="center">
-  <img src="https://graph.org/file/26e94f62b046809b2bf1b.jpg">
+  <img src="https://telegra.ph/file/29f6a99ce5ae25cf14153.png">
 </p>
