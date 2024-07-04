@@ -13,6 +13,6 @@
  <h3 align="center">
 ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs 
 
-[˹ₜₕₑ - ₛₜₒₙₑ˼](https://t.me/Dadu10x)
+[- 𝛅 𝛕 ꪮ ꪀ 𝛆](https://t.me/Dadu10x)
 <h3 align="center">
-<a href="https://github.com/the-stonex"><img alt="Website" src="https://img.shields.io/badge/ₜₕₑ - ₛₜₒₙₑ-red"></a>
+<a href="https://github.com/the-stonex"><img alt="Website" src="https://img.shields.io/badge/ₜₕₑ - ₛₜₒₙₑ-BLACK"></a>
