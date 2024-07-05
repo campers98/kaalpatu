@@ -1,1 +1,1 @@
-#procfile
+worker: bash start
