@@ -6,8 +6,8 @@ from typing import Union
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Voice
 
 import config
-from ChampuXMusic import app
-from ChampuXMusic.utils.formatters import (
+from StoneXMusic import app
+from StoneXMusic.utils.formatters import (
     check_duration,
     convert_bytes,
     get_readable_time,
