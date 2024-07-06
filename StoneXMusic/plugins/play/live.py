@@ -3,10 +3,10 @@ import random
 from pyrogram import filters
 
 from config import BANNED_USERS
-from ChampuXMusic import YouTube, app, HEYEMOJI
-from ChampuXMusic.utils.channelplay import get_channeplayCB
-from ChampuXMusic.utils.decorators.language import languageCB
-from ChampuXMusic.utils.stream.stream import stream
+from StoneXMusic import YouTube, app, HEYEMOJI
+from StoneXMusic.utils.channelplay import get_channeplayCB
+from StoneXMusic.utils.decorators.language import languageCB
+from StoneXMusic.utils.stream.stream import stream
 
 
 @app.on_callback_query(filters.regex("LiveStream") & ~BANNED_USERS)
