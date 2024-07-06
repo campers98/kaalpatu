@@ -1,7 +1,7 @@
 import asyncio
 
-from ChampuXMusic.misc import db
-from ChampuXMusic.utils.database import get_active_chats, is_music_playing
+from StoneXMusic.misc import db
+from StoneXMusic.utils.database import get_active_chats, is_music_playing
 
 
 async def timer():
