@@ -5,9 +5,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 load_dotenv()
 from config import SUPPORT_CHAT, adminlist, confirmer
 from strings import get_string
-from ChampuXMusic import app
-from ChampuXMusic.misc import SUDOERS, db
-from ChampuXMusic.utils.database import (
+from StoneXMusic import app
+from StoneXMusic.misc import SUDOERS, db
+from StoneXMusic.utils.database import (
     get_authuser_names,
     get_cmode,
     get_lang,
@@ -49,7 +49,7 @@ def AdminRightsCheck(mystic):
                     [
                         InlineKeyboardButton(
                             text="ʜᴏᴡ ᴛᴏ ғɪx ?",
-                            callback_data="ChampuAdmin",
+                            callback_data="StoneAdmin",
                         ),
                     ]
                 ]
@@ -146,7 +146,7 @@ def AdminActual(mystic):
                     [
                         InlineKeyboardButton(
                             text="ʜᴏᴡ ᴛᴏ ғɪx ?",
-                            callback_data="ChampuAdmin",
+                            callback_data="StoneAdmin",
                         ),
                     ]
                 ]
