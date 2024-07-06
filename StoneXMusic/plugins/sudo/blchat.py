@@ -2,10 +2,10 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from config import BANNED_USERS
-from ChampuXMusic import app
-from ChampuXMusic.misc import SUDOERS
-from ChampuXMusic.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
-from ChampuXMusic.utils.decorators.language import language
+from StoneXMusic import app
+from StoneXMusic.misc import SUDOERS
+from StoneXMusic.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
+from StoneXMusic.utils.decorators.language import language
 
 
 @app.on_message(filters.command(["blchat", "blacklistchat"]) & SUDOERS)
