@@ -11,9 +11,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import PLAYLIST_IMG_URL, SUPPORT_CHAT, adminlist
 from strings import get_string
-from ChampuXMusic import YouTube, app
-from ChampuXMusic.misc import SUDOERS
-from ChampuXMusic.utils.database import (
+from StoneXMusic import YouTube, app
+from StoneXMusic.misc import SUDOERS
+from StoneXMusic.utils.database import (
     get_assistant,
     get_cmode,
     get_lang,
