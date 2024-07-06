@@ -5,17 +5,17 @@ from pyrogram.enums import ChatMembersFilter
 from pyrogram.errors import FloodWait
 
 from config import adminlist
-from ChampuXMusic import app
-from ChampuXMusic.misc import SUDOERS
-from ChampuXMusic.utils.database import (
+from StoneXMusic import app
+from StoneXMusic.misc import SUDOERS
+from StoneXMusic.utils.database import (
     get_active_chats,
     get_authuser_names,
     get_client,
     get_served_chats,
     get_served_users,
 )
-from ChampuXMusic.utils.decorators.language import language
-from ChampuXMusic.utils.formatters import alpha_to_int
+from StoneXMusic.utils.decorators.language import language
+from StoneXMusic.utils.formatters import alpha_to_int
 
 IS_BROADCASTING = False
 
@@ -117,7 +117,7 @@ async def braodcast_message(client, message, _):
     if "-assistant" in message.text:
         aw = await message.reply_text(_["broad_5"])
         text = _["broad_6"]
-        from ChampuXMusic.core.userbot import assistants
+        from StoneXMusic.core.userbot import assistants
 
         for num in assistants:
             sent = 0
