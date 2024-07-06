@@ -10,22 +10,22 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from config import BANNED_USERS, lyrical
-from ChampuXMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app, HEYEMOJI
-from ChampuXMusic.core.call import Champu
-from ChampuXMusic.utils import seconds_to_min, time_to_seconds
-from ChampuXMusic.utils.channelplay import get_channeplayCB
-from ChampuXMusic.utils.database import add_served_chat
-from ChampuXMusic.utils.decorators.language import languageCB
-from ChampuXMusic.utils.decorators.play import PlayWrapper
-from ChampuXMusic.utils.formatters import formats
-from ChampuXMusic.utils.inline import (
+from StoneXMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app, HEYEMOJI
+from StoneXMusic.core.call import Stone
+from StoneXMusic.utils import seconds_to_min, time_to_seconds
+from StoneXMusic.utils.channelplay import get_channeplayCB
+from StoneXMusic.utils.database import add_served_chat
+from StoneXMusic.utils.decorators.language import languageCB
+from StoneXMusic.utils.decorators.play import PlayWrapper
+from StoneXMusic.utils.formatters import formats
+from StoneXMusic.utils.inline import (
     botplaylist_markup,
     livestream_markup,
     playlist_markup,
     slider_markup,
     track_markup,
 )
-from ChampuXMusic.utils.logger import play_logs
+from StoneXMusic.utils.logger import play_logs
 
 # Define a dictionary to track the last message timestamp for each user
 user_last_message_time = {}
@@ -378,7 +378,7 @@ async def play_commnd(
             return await mystic.delete()
         else:
             try:
-                await Champu.stream_call(url)
+                await Stone.stream_call(url)
             except NoActiveGroupCall:
                 await mystic.edit_text(_["black_9"])
                 return await app.send_message(
@@ -762,14 +762,14 @@ from pyrogram.types import InlineKeyboardMarkup
 from youtubesearchpython.__future__ import VideosSearch
 
 import config
-from ChampuXMusic import Carbon, YouTube, app
-from ChampuXMusic.core.call import Champu
-from ChampuXMusic.misc import db
-from ChampuXMusic.utils.database import add_active_video_chat, is_active_chat
-from ChampuXMusic.utils.exceptions import AssistantErr
-from ChampuXMusic.utils.inline import aq_markup, close_markup, stream_markup, stream_markup2
-from ChampuXMusic.utils.pastebin import ChampuBin
-from ChampuXMusic.utils.stream.queue import put_queue, put_queue_index
+from StoneXMusic import Carbon, YouTube, app
+from StoneXMusic.core.call import Stone
+from StoneXMusic.misc import db
+from StoneXMusic.utils.database import add_active_video_chat, is_active_chat
+from StoneXMusic.utils.exceptions import AssistantErr
+from StoneXMusic.utils.inline import aq_markup, close_markup, stream_markup, stream_markup2
+from StoneXMusic.utils.pastebin import StoneBin
+from StoneXMusic.utils.stream.queue import put_queue, put_queue_index
 
 
 async def stream(
@@ -788,7 +788,7 @@ async def stream(
     if not result:
         return
     if forceplay:
-        await Champu.force_stop_stream(chat_id)
+        await Stone.force_stop_stream(chat_id)
     if streamtype == "playlist":
         msg = f"{_['play_19']}\n\n"
         count = 0
@@ -1041,7 +1041,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Champu.join_call(chat_id, original_chat_id, file_path, video=status)
+            await Stone.join_call(chat_id, original_chat_id, file_path, video=status)
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -1097,7 +1097,7 @@ async def stream(
             n, file_path = await YouTube.video(link)
             if n == 0:
                 raise AssistantErr(_["str_3"])
-            await Champu.join_call(
+            await Stone.join_call(
                 chat_id,
                 original_chat_id,
                 file_path,
