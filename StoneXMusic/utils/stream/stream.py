@@ -5,8 +5,8 @@ from typing import Union
 from pyrogram.types import InlineKeyboardMarkup
 
 import config
-from ChampuXMusic import YouTube, app
-from ChampuXMusic.core.call import Champu
+from StoneXMusic import YouTube, app
+from StoneXMusic.core.call import Champu
 
 # Define a dictionary to track the last message timestamp for each user
 user_last_message_time = {}
@@ -20,14 +20,14 @@ from pyrogram.types import InlineKeyboardMarkup
 from youtubesearchpython.__future__ import VideosSearch
 
 import config
-from ChampuXMusic import Carbon, YouTube, app
-from ChampuXMusic.core.call import Champu
-from ChampuXMusic.misc import db
-from ChampuXMusic.utils.database import add_active_video_chat, is_active_chat
-from ChampuXMusic.utils.exceptions import AssistantErr
-from ChampuXMusic.utils.inline import aq_markup, close_markup, stream_markup, stream_markup2
-from ChampuXMusic.utils.pastebin import ChampuBin
-from ChampuXMusic.utils.stream.queue import put_queue, put_queue_index
+from StoneXMusic import Carbon, YouTube, app
+from StoneXMusic.core.call import Stone
+from StoneXMusic.misc import db
+from StoneXMusic.utils.database import add_active_video_chat, is_active_chat
+from StoneXMusic.utils.exceptions import AssistantErr
+from StoneXMusic.utils.inline import aq_markup, close_markup, stream_markup, stream_markup2
+from StoneXMusic.utils.pastebin import StoneBin
+from StoneXMusic.utils.stream.queue import put_queue, put_queue_index
 
 
 async def stream(
@@ -94,7 +94,7 @@ async def stream(
                 except:
 
                     await mystic.edit_text(_["play_3"])
-                await Champu.join_call(
+                await Stone.join_call(
                     chat_id,
                     original_chat_id,
                     file_path,
@@ -132,7 +132,7 @@ async def stream(
         if count == 0:
             return
         else:
-            link = await ChampuBin(msg)
+            link = await StoneBin(msg)
             lines = msg.count("\n")
             if lines >= 17:
                 car = os.linesep.join(msg.split(os.linesep)[:17])
@@ -186,7 +186,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Champu.join_call(
+            await Stone.join_call(
                 chat_id,
                 original_chat_id,
                 file_path,
@@ -299,7 +299,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Champu.join_call(chat_id, original_chat_id, file_path, video=status)
+            await Stone.join_call(chat_id, original_chat_id, file_path, video=status)
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -355,7 +355,7 @@ async def stream(
             n, file_path = await YouTube.video(link)
             if n == 0:
                 raise AssistantErr(_["str_3"])
-            await Champu.join_call(
+            await Stone.join_call(
                 chat_id,
                 original_chat_id,
                 file_path,
