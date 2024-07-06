@@ -8,9 +8,9 @@ from pyrogram.errors.exceptions.bad_request_400 import (
 )
 
 from config import API_HASH, API_ID, LOGGER_ID
-from ChampuXMusic import app
-from ChampuXMusic.misc import SUDOERS
-from ChampuXMusic.utils.database import clonebotdb, get_assistant
+from StoneXMusic import app
+from StoneXMusic.misc import SUDOERS
+from StoneXMusic.utils.database import clonebotdb, get_assistant
 
 CLONES = set()
 
@@ -27,7 +27,7 @@ async def clone_txt(client, message):
                 API_ID,
                 API_HASH,
                 bot_token=bot_token,
-                plugins=dict(root="ChampuXMusic.cplugin"),
+                plugins=dict(root="StoneXMusic.cplugin"),
             )
             await ai.start()
             bot = await ai.get_me()
