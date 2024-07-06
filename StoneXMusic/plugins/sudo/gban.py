@@ -5,10 +5,10 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import Message
 
 from config import BANNED_USERS
-from ChampuXMusic import app
-from ChampuXMusic.misc import SUDOERS
-from ChampuXMusic.utils import get_readable_time
-from ChampuXMusic.utils.database import (
+from StoneXMusic import app
+from StoneXMusic.misc import SUDOERS
+from StoneXMusic.utils import get_readable_time
+from StoneXMusic.utils.database import (
     add_banned_user,
     get_banned_count,
     get_banned_users,
@@ -16,8 +16,8 @@ from ChampuXMusic.utils.database import (
     is_banned_user,
     remove_banned_user,
 )
-from ChampuXMusic.utils.decorators.language import language
-from ChampuXMusic.utils.extraction import extract_user
+from StoneXMusic.utils.decorators.language import language
+from StoneXMusic.utils.extraction import extract_user
 
 
 @app.on_message(filters.command(["gban", "globalban"]) & SUDOERS)
