@@ -7,7 +7,7 @@ from typing import Optional, Union
 from PIL import Image, ImageDraw, ImageFont
 from pyrogram import enums, filters
 
-from ChampuXMusic import app
+from StoneXMusic import app
 
 # Define a dictionary to track the last message timestamp for each user
 user_last_message_time = {}
@@ -69,8 +69,8 @@ async def get_userinfo_img(
 
 # --------------------------------------------------------------------------------- #
 
-bg_path = "ChampuXMusic/assets/userinfo.png"
-font_path = "ChampuXMusic/assets/champu.ttf"
+bg_path = "StoneXMusic/assets/userinfo.png"
+font_path = "StoneXMusic/assets/Stone.ttf"
 
 # --------------------------------------------------------------------------------- #
 
