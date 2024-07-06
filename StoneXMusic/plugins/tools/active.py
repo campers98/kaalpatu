@@ -2,9 +2,9 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from unidecode import unidecode
 
-from ChampuXMusic import app
-from ChampuXMusic.misc import SUDOERS
-from ChampuXMusic.utils.database import (
+from StoneXMusic import app
+from StoneXMusic.misc import SUDOERS
+from StoneXMusic.utils.database import (
     get_active_chats,
     get_active_video_chats,
     remove_active_chat,
