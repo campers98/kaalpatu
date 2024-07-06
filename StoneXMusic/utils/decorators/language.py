@@ -1,6 +1,6 @@
 from strings import get_string
-from ChampuXMusic.misc import SUDOERS
-from ChampuXMusic.utils.database import get_lang, is_maintenance
+from StoneXMusic.misc import SUDOERS
+from StoneXMusic.utils.database import get_lang, is_maintenance
 import config
 
 
