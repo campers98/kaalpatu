@@ -2,8 +2,8 @@ import asyncio
 from typing import Union
 
 from config import autoclean, time_to_seconds
-from ChampuXMusic.misc import db
-from ChampuXMusic.utils.formatters import check_duration, seconds_to_min
+from StoneXMusic.misc import db
+from StoneXMusic.utils.formatters import check_duration, seconds_to_min
 
 
 async def put_queue(
