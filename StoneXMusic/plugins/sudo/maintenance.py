@@ -2,9 +2,9 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from strings import get_string
-from ChampuXMusic import app
-from ChampuXMusic.misc import SUDOERS
-from ChampuXMusic.utils.database import (
+from StoneXMusic import app
+from StoneXMusic.misc import SUDOERS
+from StoneXMusic.utils.database import (
     get_lang,
     is_maintenance,
     maintenance_off,
