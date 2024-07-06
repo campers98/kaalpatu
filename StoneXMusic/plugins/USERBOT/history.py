@@ -5,8 +5,8 @@ from pyrogram import Client, filters
 from pyrogram.raw.functions.messages import DeleteHistory
 from pyrogram.types import Message
 
-from ChampuXMusic.core.userbot import assistants
-from ChampuXMusic.utils.database import get_client
+from StoneXMusic.core.userbot import assistants
+from StoneXMusic.utils.database import get_client
 
 
 @Client.on_message(filters.command(["sg", "History"], prefixes=["."]))
@@ -31,8 +31,8 @@ async def sg(client: Client, message: Message):
             return await lol.edit("<code>ᴘʟᴇᴀsᴇ sᴘᴇᴄɪғʏ ᴀ ᴠᴀʟɪᴅ ᴜsᴇʀ!</code>")
     sgbot = ["sangmata_bot", "sangmata_beta_bot"]
     sg = random.choice(sgbot)
-    Champu = random.choice(assistants)
-    ubot = await get_client(Champu)
+    Stone = random.choice(assistants)
+    ubot = await get_client(Stone)
 
     try:
         a = await ubot.send_message(sg, f"{user.id}")
@@ -45,7 +45,7 @@ async def sg(client: Client, message: Message):
         if stalk.text is None:
             continue
         if not stalk:
-            await message.reply("@TheChampu")
+            await message.reply("@Ywr_stone")
         elif stalk:
             await message.reply(f"{stalk.text}")
             break
