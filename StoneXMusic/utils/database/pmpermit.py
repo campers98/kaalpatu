@@ -1,4 +1,4 @@
-from ChampuXMusic.core.mongo import mongodb
+from StoneXMusic.core.mongo import mongodb
 
 pmpermitdb = mongodb.permit
 
