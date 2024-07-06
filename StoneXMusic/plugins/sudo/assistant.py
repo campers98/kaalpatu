@@ -4,16 +4,16 @@ from inspect import getfullargspec
 from pyrogram import filters
 from pyrogram.types import Message
 
-from ChampuXMusic import app
-from ChampuXMusic.misc import SUDOERS
-from ChampuXMusic.utils.database import get_client
+from StoneXMusic import app
+from StoneXMusic.misc import SUDOERS
+from StoneXMusic.utils.database import get_client
 
 ASSISTANT_PREFIX = "."
 
 
 @app.on_message(filters.command("setdp", prefixes=ASSISTANT_PREFIX) & SUDOERS)
 async def set_pfp(client, message):
-    from ChampuXMusic.core.userbot import assistants
+    from StoneXMusic.core.userbot import assistants
 
     if not message.reply_to_message.photo:
         return await eor(message, text="Reply to a photo.")
@@ -49,7 +49,7 @@ async def set_bio(client, message):
 
 @app.on_message(filters.command("setname", prefixes=ASSISTANT_PREFIX) & SUDOERS)
 async def set_name(client, message):
-    from ChampuXMusic.core.userbot import assistants
+    from StoneXMusic.core.userbot import assistants
 
     if len(message.command) == 1:
         return await eor(message, text="Give some text to set as name.")
@@ -68,7 +68,7 @@ async def set_name(client, message):
 
 @app.on_message(filters.command("deldp", prefixes=ASSISTANT_PREFIX) & SUDOERS)
 async def del_pfp(client, message):
-    from ChampuXMusic.core.userbot import assistants
+    from StoneXMusic.core.userbot import assistants
 
     for num in assistants:
         client = await get_client(num)
@@ -85,7 +85,7 @@ async def del_pfp(client, message):
 
 @app.on_message(filters.command("delalldp", prefixes=ASSISTANT_PREFIX) & SUDOERS)
 async def delall_pfp(client, message):
-    from ChampuXMusic.core.userbot import assistants
+    from StoneXMusic.core.userbot import assistants
 
     for num in assistants:
         client = await get_client(num)
