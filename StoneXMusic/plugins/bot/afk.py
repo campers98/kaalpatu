@@ -5,9 +5,9 @@ from pyrogram import filters
 from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
 
-from ChampuXMusic import app
-from ChampuXMusic.mongo.afkdb import add_afk, is_afk, remove_afk
-from ChampuXMusic.mongo.readable_time import get_readable_time
+from StoneXMusic import app
+from StoneXMusic.mongo.afkdb import add_afk, is_afk, remove_afk
+from StoneXMusic.mongo.readable_time import get_readable_time
 
 
 @app.on_message(filters.command(["afk", "brb"], prefixes=["/", "!"]))
