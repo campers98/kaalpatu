@@ -12,17 +12,17 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS, adminlist
 from strings import get_string
-from ChampuXMusic import app, HEYEMOJI
-from ChampuXMusic.misc import SUDOERS
-from ChampuXMusic.utils.database import (
+from StoneXMusic import app, HEYEMOJI
+from StoneXMusic.misc import SUDOERS
+from StoneXMusic.utils.database import (
     get_assistant,
     get_cmode,
     get_lang,
     get_playmode,
     get_playtype,
 )
-from ChampuXMusic.utils.logger import play_logs
-from ChampuXMusic.utils.stream.stream import stream
+from StoneXMusic.utils.logger import play_logs
+from StoneXMusic.utils.stream.stream import stream
 
 RADIO_STATION = {
     "air bilaspur": "http://air.pc.cdn.bitgravity.com/air/live/pbaudio110/playlist.m3u8",
