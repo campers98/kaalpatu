@@ -7,11 +7,11 @@ from pyrogram.types import (
 )
 
 from config import BANNED_USERS, OWNER_ID, START_IMG_URL
-from ChampuXMusic import app
-from ChampuXMusic.misc import SUDOERS
-from ChampuXMusic.utils.database import add_sudo, remove_sudo
-from ChampuXMusic.utils.decorators.language import language
-from ChampuXMusic.utils.extraction import extract_user
+from StoneXMusic import app
+from StoneXMusic.misc import SUDOERS
+from StoneXMusic.utils.database import add_sudo, remove_sudo
+from StoneXMusic.utils.decorators.language import language
+from StoneXMusic.utils.extraction import extract_user
 
 
 @app.on_message(
