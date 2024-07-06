@@ -6,9 +6,9 @@ from pyrogram.enums import ChatMembersFilter, ChatMemberStatus, ChatType
 from pyrogram.types import Message
 
 from config import BANNED_USERS
-from ChampuXMusic import app
-from ChampuXMusic.utils.database import set_cmode
-from ChampuXMusic.utils.decorators.admins import AdminActual
+from StoneXMusic import app
+from StoneXMusic.utils.database import set_cmode
+from StoneXMusic.utils.decorators.admins import AdminActual
 
 # Define a dictionary to track the last message timestamp for each user
 user_last_message_time = {}
