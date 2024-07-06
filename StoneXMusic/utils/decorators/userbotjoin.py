@@ -11,9 +11,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import SUPPORT_CHAT
 from strings import get_string
-from ChampuXMusic import app
-from ChampuXMusic.misc import SUDOERS
-from ChampuXMusic.utils.database import (
+from StoneXMusic import app
+from StoneXMusic.misc import SUDOERS
+from StoneXMusic.utils.database import (
     get_assistant,
     get_lang,
     is_active_chat,
