@@ -13,15 +13,15 @@ from pyrogram import filters
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
 
 import config
-from ChampuXMusic import app
-from ChampuXMusic.misc import HAPP, SUDOERS, XCB
-from ChampuXMusic.utils.database import (
+from StoneXMusic import app
+from StoneXMusic.misc import HAPP, SUDOERS, XCB
+from StoneXMusic.utils.database import (
     get_active_chats,
     remove_active_chat,
     remove_active_video_chat,
 )
-from ChampuXMusic.utils.decorators.language import language
-from ChampuXMusic.utils.pastebin import ChampuBin
+from StoneXMusic.utils.decorators.language import language
+from StoneXMusic.utils.pastebin import ChampuBin
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
