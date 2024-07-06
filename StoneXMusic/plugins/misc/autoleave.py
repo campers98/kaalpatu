@@ -4,9 +4,9 @@ from datetime import datetime
 from pyrogram.enums import ChatType
 
 import config
-from ChampuXMusic import app
-from ChampuXMusic.core.call import Champu, autoend
-from ChampuXMusic.utils.database import get_client, is_active_chat, is_autoend
+from StoneXMusic import app
+from StoneXMusic.core.call import Stone, autoend
+from StoneXMusic.utils.database import get_client, is_active_chat, is_autoend
 
 
 async def auto_leave():
@@ -14,7 +14,7 @@ async def auto_leave():
         while not await asyncio.sleep(
             config.AUTO_LEAVE_ASSISTANT_TIME
         ):
-            from ChampuXMusic.core.userbot import assistants
+            from StoneXMusic.core.userbot import assistants
 
             for num in assistants:
                 client = await get_client(num)
@@ -61,7 +61,7 @@ async def auto_end():
                     continue
                 autoend[chat_id] = {}
                 try:
-                    await Champu.stop_stream(chat_id)
+                    await Stone.stop_stream(chat_id)
                 except:
                     continue
                 try:
