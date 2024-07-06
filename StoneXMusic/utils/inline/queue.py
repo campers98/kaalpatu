@@ -1,5 +1,5 @@
 from typing import Union
-from ChampuXMusic import app
+from StoneXMusic import app
 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
