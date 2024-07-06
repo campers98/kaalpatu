@@ -2,10 +2,10 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
 from config import BANNED_USERS
-from ChampuXMusic import app
-from ChampuXMusic.utils.database import get_playmode, get_playtype, is_nonadmin_chat
-from ChampuXMusic.utils.decorators import language
-from ChampuXMusic.utils.inline.settings import playmode_users_markup
+from StoneXMusic import app
+from StoneXMusic.utils.database import get_playmode, get_playtype, is_nonadmin_chat
+from StoneXMusic.utils.decorators import language
+from StoneXMusic.utils.inline.settings import playmode_users_markup
 
 
 @app.on_message(
