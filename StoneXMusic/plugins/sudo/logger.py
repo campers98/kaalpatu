@@ -1,9 +1,9 @@
 from pyrogram import filters
 
-from ChampuXMusic import app
-from ChampuXMusic.misc import SUDOERS
-from ChampuXMusic.utils.database import add_off, add_on
-from ChampuXMusic.utils.decorators.language import language
+from StoneXMusic import app
+from StoneXMusic.misc import SUDOERS
+from StoneXMusic.utils.database import add_off, add_on
+from StoneXMusic.utils.decorators.language import language
 
 
 @app.on_message(filters.command(["logger"]) & SUDOERS)
