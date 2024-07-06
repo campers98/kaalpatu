@@ -24,7 +24,7 @@ assistantids = []
 class Userbot(Client):
     def __init__(self):
         self.one = Client(
-            name="ChampuAss1",
+            name="StoneAss1",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING1),
@@ -32,28 +32,28 @@ class Userbot(Client):
             plugins=dict(root="ChampuXMusic.plugins.USERBOT"),
         )
         self.two = Client(
-            name="ChampuAss2",
+            name="StoneAss2",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING2),
             no_updates=True,
         )
         self.three = Client(
-            name="ChampuAss3",
+            name="StoneAss3",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING3),
             no_updates=True,
         )
         self.four = Client(
-            name="ChampuAss4",
+            name="StoneAss4",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING4),
             no_updates=True,
         )
         self.five = Client(
-            name="ChampuAss5",
+            name="StoneAss5",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING5),
@@ -66,10 +66,10 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("TheShivanshu")
-                await self.one.join_chat("TheChampuClub")
-                await self.one.join_chat("FenuZone")
-                await self.one.join_chat("TheChampu")
+                await self.one.join_chat("Dadu10x")
+                await self.one.join_chat("Shayari_kii_dairy")
+                await self.one.join_chat("LeoBot_updates")
+                await self.one.join_chat("Ywr_stone")
 
             except:
                 pass
@@ -96,10 +96,11 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("TheShivanshu")
-                await self.two.join_chat("TheChampuClub")
-                await self.two.join_chat("FenuZone")
-                await self.two.join_chat("TheChampu")
+                await self.Two.join_chat("Dadu10x")
+                await self.Two.join_chat("Shayari_kii_dairy")
+                await self.Two.join_chat("LeoBot_updates")
+                await self.Two.join_chat("Ywr_stone")
+
             except:
                 pass
             assistants.append(2)
@@ -120,10 +121,11 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("TheShivanshu")
-                await self.three.join_chat("TheChampuClub")
-                await self.three.join_chat("FenuZone")
-                await self.three.join_chat("TheChampu")
+                await self.Three.join_chat("Dadu10x")
+                await self.Three.join_chat("Shayari_kii_dairy")
+                await self.Three.join_chat("LeoBot_updates")
+                await self.Three.join_chat("Ywr_stone")
+
             except:
                 pass
             assistants.append(3)
@@ -145,10 +147,10 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("TheShivanshu")
-                await self.four.join_chat("TheChampuClub")
-                await self.four.join_chat("FenuZone")
-                await self.four.join_chat("TheChampu")
+                await self.four.join_chat("Dadu10x")
+                await self.four.join_chat("Shayari_kii_dairy")
+                await self.four.join_chat("LeoBot_updates")
+                await self.four.join_chat("Ywr_stone")
             except:
                 pass
             assistants.append(4)
@@ -170,10 +172,10 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("TheShivanshu")
-                await self.five.join_chat("TheChampuClub")
-                await self.five.join_chat("FenuZone")
-                await self.five.join_chat("dhhdshhss6")
+                await self.five.join_chat("Dadu10x")
+                await self.five.join_chat("Shayari_kii_dairy")
+                await self.five.join_chat("LeoBot_updates")
+                await self.five.join_chat("Ywr_stone")
             except:
                 pass
             assistants.append(5)
