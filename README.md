@@ -46,12 +46,5 @@
 <p align="center">
 <a href="https://t.me/+25ycpMEBd7QwMzg1"><img src="https://img.shields.io/badge/-Support%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
 </p>
-
-
-<p align="center">
-<a href="https://t.me/+Wr5PYab_vmgyMmRl"><img src="https://img.shields.io/badge/-Feelings%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
-</p>
-
-</p>
 <p align="center">
  <a href="https://www.youtube.com/@ShivanshuDeo"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
