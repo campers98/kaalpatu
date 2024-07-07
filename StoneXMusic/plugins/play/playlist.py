@@ -127,7 +127,7 @@ async def check_playlist(client, message: Message, _):
         count += 1
         msg += f"\n\n{count}- {title[:70]}\n"
         msg += _["playlist_5"].format(duration)
-    link = await ChampuBin(msg)
+    link = await StoneBin(msg)
     lines = msg.count("\n")
     if lines >= 17:
         car = os.linesep.join(msg.split(os.linesep)[:17])
@@ -600,7 +600,7 @@ async def del_plist(client, CallbackQuery, _):
 @app.on_callback_query(filters.regex("recover_playlist") & ~BANNED_USERS)
 @languageCB
 async def add_playlist(client, CallbackQuery, _):
-    from ChampuXMusic import YouTube
+    from StoneXMusic import YouTube
 
     callback_data = CallbackQuery.data.strip()
     videoid = callback_data.split(None, 1)[1]
@@ -674,7 +674,7 @@ async def add_playlists(client, CallbackQuery, _):
     _check = await get_playlist(user_id, videoid)
     if _check:
         try:
-            from ChampuXMusic import YouTube
+            from StoneXMusic import YouTube
 
             return await CallbackQuery.answer(_["playlist_8"], show_alert=True)
         except:
