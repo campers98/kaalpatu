@@ -3,7 +3,7 @@ from typing import List
 
 import yaml
 
-LOGGERS = "TheKittyXD_Bot"  # connect errors api key "Dont change it"
+LOGGERS = "Nayaramusicbot"  # connect errors api key "Dont change it"
 
 languages = {}
 languages_present = {}
