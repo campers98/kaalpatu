@@ -109,13 +109,13 @@ autoclean = []
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://telegra.ph/file/55ea468498cfb7881c28b.jpg"
+    "START_IMG_URL", "https://graph.org/file/26e94f62b046809b2bf1b.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://graph.org/file/15fde98db07a70beb6f4a.jpg"
+    "PING_IMG_URL", "https://telegra.ph/file/29f6a99ce5ae25cf14153.png"
 )
-PLAYLIST_IMG_URL = "https://telegra.ph/file/8ff7a386f161aea9ed5fb.jpg"
-STATS_IMG_URL = "https://graph.org/file/2dcb664a9c0ba9d9d80f6.jpg"
+PLAYLIST_IMG_URL = "https://graph.org/file/606123f62cc83a6e081eb.jpg"
+STATS_IMG_URL = "https://graph.org/file/c398934c83ee1259387a8.jpg"
 TELEGRAM_AUDIO_URL = "https://graph.org/file/b13a16734bab174f58482.jpg"
 TELEGRAM_VIDEO_URL = "https://graph.org/file/5938774f48c1f019c73f7.jpg"
 STREAM_IMG_URL = "https://graph.org/file/61b2679bd92a3ab646153.jpg"
