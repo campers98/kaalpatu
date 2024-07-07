@@ -32,4 +32,4 @@ jobs:
             repository: .
             commit_user_name: the-stonex
             commit_user_email: the-stonex@users.noreply.github.com
-            commit_author: ChampuXD <the-stonex@users.noreply.github.com>
+            commit_author: the-stonex <the-stonex@users.noreply.github.com>
