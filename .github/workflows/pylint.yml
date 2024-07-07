@@ -30,6 +30,6 @@ jobs:
             commit_message: "Pylint: Auto Fixes"
             commit_options: "--no-verify"
             repository: .
-            commit_user_name: ChampuXD
-            commit_user_email: ChampuXD@users.noreply.github.com
-            commit_author: ChampuXD <ChampuXD@users.noreply.github.com>
+            commit_user_name: the-stonex
+            commit_user_email: the-stonex@users.noreply.github.com
+            commit_author: ChampuXD <the-stonex@users.noreply.github.com>
