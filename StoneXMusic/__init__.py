@@ -2,11 +2,11 @@
 from SafoneAPI import SafoneAPI
 import config
 import random
-from StoneXmusic.core.bot import Stone
-from StoneXmusic.core.dir import dirr
-from StoneXmusic.core.git import git
-from StoneXmusic.core.userbot import Userbot
-from StoneXmusic.misc import dbb, heroku
+from StoneXMusic.core.bot import Stone
+from StoneXMusic.core.dir import dirr
+from StoneXMusic.core.git import git
+from StoneXMusic.core.userbot import Userbot
+from StoneXMusic.misc import dbb, heroku
 
 from .logging import LOGGER
 
