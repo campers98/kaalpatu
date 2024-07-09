@@ -55,7 +55,7 @@ def circle(pfp, size=(500, 500)):
     return pfp
 
 def welcomepic(pic, user, chatname, id, uname):
-    background = Image.open("ChampuXMusic/assets/welcome.png")
+    background = Image.open("StoneXMusic/assets/welcome.png")
     pfp = Image.open(pic).convert("RGBA")
     pfp = circle(pfp)
     pfp = pfp.resize((835, 839))
@@ -72,7 +72,7 @@ def welcomepic(pic, user, chatname, id, uname):
 
 @app.on_message(filters.command("wel") & ~filters.private)
 async def auto_state(_, message):
-    usage = "**Usage:**\n⦿/wel [on|off]\n➤ᴄʜᴀᴍᴘᴜ sᴘᴇᴄɪᴀʟ ᴡᴇʟᴄᴏᴍᴇ.........."
+    usage = "**Usage:**\n⦿/wel [on|off]\n➤Stone sᴘᴇᴄɪᴀʟ ᴡᴇʟᴄᴏᴍᴇ.........."
     if len(message.command) == 1:
         return await message.reply_text(usage)
     chat_id = message.chat.id
