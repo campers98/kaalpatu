@@ -12,7 +12,7 @@ from pyrogram.enums import ParseMode
 from pyrogram import *
 from pyrogram.types import *
 from logging import getLogger
-from StoneXMusic.utils.Champu_ban import admin_filter
+from StoneXMusic.utils.Stone_ban import admin_filter
 import os
 
 LOGGER = getLogger(__name__)
