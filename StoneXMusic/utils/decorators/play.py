@@ -22,7 +22,7 @@ from StoneXMusic.utils.database import (
     is_active_chat,
     is_maintenance,
 )
-from ChampuXMusic.utils.inline.playlist import botplaylist_markup
+from StoneXMusic.utils.inline.playlist import botplaylist_markup
 
 links = {}
 clinks = {}
