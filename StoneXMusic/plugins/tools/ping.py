@@ -10,7 +10,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 from config import BANNED_USERS
 from StoneXMusic import app
-from StoneXMusic.core.call import Champu
+from StoneXMusic.core.call import Stone
 from StoneXMusic.utils import bot_sys_stats
 from StoneXMusic.utils.decorators.language import language
 
