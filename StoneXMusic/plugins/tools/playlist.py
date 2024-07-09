@@ -19,7 +19,7 @@ from StoneXMusic.utils.inline.playlist import (
     get_playlist_markup,
     warning_markup,
 )
-from StoneXMusic.utils.pastebin import stoneBin
+from StoneXMusic.utils.pastebin import StoneBin
 from StoneXMusic.utils.stream.stream import stream
 
 # Define a dictionary to track the last message timestamp for each user
