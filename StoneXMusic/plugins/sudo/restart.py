@@ -21,7 +21,7 @@ from StoneXMusic.utils.database import (
     remove_active_video_chat,
 )
 from StoneXMusic.utils.decorators.language import language
-from StoneXMusic.utils.pastebin import ChampuBin
+from StoneXMusic.utils.pastebin import StoneBin
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
