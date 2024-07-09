@@ -8,7 +8,7 @@ import config
 from config import BANNED_USERS
 from StoneXMusic import app
 from StoneXMusic.misc import db
-from StoneXMusic.utils import ChampuBin, get_channeplayCB, seconds_to_min
+from StoneXMusic.utils import StoneBin, get_channeplayCB, seconds_to_min
 from StoneXMusic.utils.database import get_cmode, is_active_chat, is_music_playing
 from StoneXMusic.utils.decorators.language import language, languageCB
 from StoneXMusic.utils.inline import queue_back_markup, queue_markup
