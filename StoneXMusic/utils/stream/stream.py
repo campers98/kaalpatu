@@ -6,7 +6,7 @@ from pyrogram.types import InlineKeyboardMarkup
 
 import config
 from StoneXMusic import YouTube, app
-from StoneXMusic.core.call import Champu
+from StoneXMusic.core.call import Stone
 
 # Define a dictionary to track the last message timestamp for each user
 user_last_message_time = {}
@@ -413,7 +413,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Champu.join_call(
+            await Stone.join_call(
                 chat_id,
                 original_chat_id,
                 link,
