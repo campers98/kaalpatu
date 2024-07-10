@@ -34,7 +34,7 @@ SPAM_THRESHOLD = 2
 SPAM_WINDOW_SECONDS = 5
 
 
-CHAMPU_PICS = [
+STONE_PICS = [
     "https://graph.org/file/97a58a8b3934fe6151399.jpg",
     "https://graph.org/file/d7224f80ca0c9eb1509fe.jpg",
     "https://graph.org/file/b68bb51a3ba3e25b233f8.jpg",
@@ -269,7 +269,7 @@ async def welcome(client, message: Message):
                     )
 
                 await message.reply_photo(
-                    random.choice(CHAMPU_PICS),
+                    random.choice(STONE_PICS),
                     caption=_["start_3"].format(
                         message.from_user.first_name,
                         app.mention,
