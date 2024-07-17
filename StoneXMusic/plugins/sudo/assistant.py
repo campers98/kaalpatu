@@ -30,7 +30,7 @@ async def set_pfp(client, message):
 
 @app.on_message(filters.command("setbio", prefixes=ASSISTANT_PREFIX) & SUDOERS)
 async def set_bio(client, message):
-    from ChampuXMusic.core.userbot import assistants
+    from StoneXMusic.core.userbot import assistants
 
     if len(message.command) == 1:
         return await eor(message, text="Give some text to set as bio.")
