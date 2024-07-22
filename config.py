@@ -23,7 +23,7 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 16000))
 LOGGER_ID = int(getenv("LOGGER_ID", "-1001987681739"))
 
 # Get this value from  on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 6438990881 6616796006))
+OWNER_ID = int(getenv("OWNER_ID", 6616796006))
 
 # Fill these variables if you're deploying on heroku.
 # Your heroku app name
